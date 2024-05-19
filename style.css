@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    position: absolute;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(21, 27, 32);
+    position: relative;
+    animation-name: box-anim;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box-anim {
+    0% {
+        left: 0;
+        top: 0;
+        background-color: rgb(21, 27, 32);
+    }
+    25% {
+        left: 400px;
+        top: 0;
+        background-color: rgb(216, 69, 24);
+    }
+    50% {
+        left: 400px;
+        top: 400px;
+        background-color: rgb(230, 226, 24);
+    }
+    75% {
+        left: 0px;
+        top: 400px;
+        background-color: rgb(64, 241, 10);
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
